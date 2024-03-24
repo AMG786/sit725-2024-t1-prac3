@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbourne Local Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="background-color: #2A4D9E;">
+        <div class="nav-wrapper navbar-size">
+            <a href="#" class="brand-logo"><img class="user-image-size" src="images/food.jpg"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a target="_blank" href="sass.html">Home</a></li>
+                <li><a target="_blank" href="sass.html">Locations</a></li>
+                <li><a target="_blank" href="blogs.html">Blogs</a></li>
+                <li><a target="_blank" href="badges.html">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 id="heading">Welcome to Melbourne Local Food Delivery</h1>
+                    <p class="flow-text">We have developed an exciting online food delivery system that utilizes 
+                        the Materialize framework and its components to provide a delightful user experience.</p>
+                </div>
+                <div class="col s12" style="display: flex; justify-content: center;">
+                    <img class="materialboxed materialboxed-image" width="250" src="images/FoodDelivery.jpg">
+                </div>
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn click-me-button modal-trigger" style="background-color: #2A4D9E;" id="clickMeButton" data-target="modal1"><i class="material-icons left">auto_fix_high</i>Order Now</a>
+                </div>
+            </div>
+
+            <div class="row" id="card-section">
+                <div class="col s4 center-align">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/TokyoTina.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Tokyo Tina</span>
+                            <p><a href="#">Check out Hanoi Hannah's youngest sibling for contemporary Japanese cuisine with added Korean flavour.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 center-align">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/LonaMisa.jpeg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Flower Drum</span>
+                            <p><a href="https://www.visitvictoria.com/regions/melbourne/eat-and-drink/restaurants/vv-flower-drum">Create a special occasion so you can head to Flower Drum for novel Cantonese fare that has garnered two hats.                            </a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s4 center-align">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/Gingerboy.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Ginger boy</span>
+                            <p><a href="https://www.visitvictoria.com/regions/melbourne/eat-and-drink/restaurants/vv-flower-drum">Create a special occasion so you can head to Flower Drum for novel Cantonese fare that has garnered two hats.                            </a></p>
+                                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="row modal-content">
+                <form class="col s12" method="post" action="/order">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="name" id="name" name="name" type="text" class="validate">
+                            <label for="name"> Full Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="delivery_address" type="text" name="delivery_address" class="validate">
+                            <label for="delivery_address">Delivery Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="quantity" type="number" name="quantity" class="validate">
+                            <label for="quantity">Quantity</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="phone_number" type="number" name="phone_number" class="validate">
+                            <label for="phone_number">Mobile Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 center-align">
+                            <button style="background-color: #2A4D9E;" type="submit" class="waves-effect waves-light btn" id="formSubmit">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
